@@ -1,5 +1,11 @@
 package com.github.zipcodewilmington.casino;
 
+import com.github.zipcodewilmington.utils.AnsiColor;
+import com.github.zipcodewilmington.utils.IOConsole;
+
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created by leon on 7/21/2020.
  * `ArcadeAccount` is registered for each user of the `Arcade`.
@@ -11,40 +17,40 @@ package com.github.zipcodewilmington.casino;
         private String accountPassword;
 
         public CasinoAccount () {
-             this.accountName = "";
-             this.accountPassword= "";
-             this.balance = 0;
-
+            this.accountName = "";
+            this.accountPassword = "";
+            this.balance = 0;
         }
 
-        public CasinoAccount (String accountName, String accountPassword,Integer balance) {
-            this.accountName = accountName;
-            this.accountPassword = accountPassword;
-            this.balance = balance;
+        public CasinoAccount(String accountName, String accountPassword, Integer balance) {
 
-        }
+                this.accountName = accountName;
+                this.accountPassword = accountPassword;
+                this.balance = balance;
 
-        public String getAccountName() {
-            return accountName;
-        }
+            }
 
-        public void setAccountName (String accountName) {
-            this.accountName = accountName;
-        }
+            public String getAccountName () {
+                return accountName;
+            }
 
-        public String getAccountPassword() {
-            return accountPassword;
-        }
+            public void setAccountName (String accountName){
+                this.accountName = accountName;
+            }
 
-        public void setAccountPassword(String accountPassword) {
-            this.accountPassword = accountPassword;
-        }
+            public String getAccountPassword () {
+                return accountPassword;
+            }
 
-        public int getBalance () {
-            return balance;
-        }
+            public void setAccountPassword (String accountPassword){
+                this.accountPassword = accountPassword;
+            }
 
-        public void setBalance (int balance) {
-            this.balance = balance;
+            public int getBalance () {
+                return balance;
+            }
+
+            public void setBalance ( int balance){
+                this.balance = balance;
+            }
         }
-    }

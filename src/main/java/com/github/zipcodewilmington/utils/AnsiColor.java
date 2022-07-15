@@ -15,9 +15,11 @@ public enum AnsiColor {
     CYAN("\u001B[36m"),
     WHITE("\u001B[37m");
 
-    private final String color;
+    private String color;
 
     AnsiColor(String ansiColor) {
+        AnsiColor.
+
         this.color = ansiColor;
     }
 
